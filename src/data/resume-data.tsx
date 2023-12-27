@@ -103,7 +103,7 @@ export const RESUME_DATA = {
     },
     {
       company: "Freelance @ Comunic-art",
-      link: "https://comunic-art.com",
+      link: "http://comunic-art.com",
       location: "Barcelona, Spain",
       badges: [],
       title: "Full-Stack Software Engineer",
