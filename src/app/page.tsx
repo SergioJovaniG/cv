@@ -150,11 +150,11 @@ export default function Page() {
                   {work.description}
                 </CardContent>
 
-                {work.highlights ? (
+                {/* {work.highlights ? (
                   <CardContent className="mt-2 text-xs pl-5">
                     ★ {work.highlights}
                   </CardContent>
-                ) : null}
+                ) : null} */}
               </Card>
             );
           })}
