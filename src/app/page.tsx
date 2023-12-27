@@ -131,6 +131,16 @@ export default function Page() {
                     {work.title}
                   </h4>
                 </CardHeader>
+                {work.note ? (
+                  <CardContent className="mt-2 text-xs underline">
+                    {work.note}
+                  </CardContent>
+                ) : null}
+                {work.intro ? (
+                  <CardContent className="mt-2 text-xs">
+                    {work.intro}
+                  </CardContent>
+                ) : null}
                 <CardContent className="mt-2 text-xs">
                   {work.description}
                 </CardContent>
@@ -139,7 +149,9 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          <h2 className="text-xl font-bold">Education</h2>
+          {RESUME_DATA.education.length > 0 ? (
+            <h2 className="text-xl font-bold">Education</h2>
+          ) : null}
           {RESUME_DATA.education.map((education) => {
             return (
               <Card key={education.school}>
@@ -168,7 +180,9 @@ export default function Page() {
         </Section>
 
         <Section className="print-force-new-page scroll-mb-16">
-          <h2 className="text-xl font-bold">Projects</h2>
+          {RESUME_DATA.projects.length > 0 ? (
+            <h2 className="text-xl font-bold">Projects</h2>
+          ) : null}
           <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
             {RESUME_DATA.projects.map((project) => {
               return (

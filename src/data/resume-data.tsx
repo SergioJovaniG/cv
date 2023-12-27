@@ -1,278 +1,150 @@
-import ConsultlyLogo from "../images/logos/consultly.svg";
-import AmbitLogo from "../images/logos/ambit.png";
-import BarepapersLogo from "../images/logos/barepapers.svg";
-import BimLogo from "../images/logos/bim.png";
-import CDGOLogo from "../images/logos/cdgo.png";
-import ClevertechLogo from "../images/logos/clevertech.png";
-import EvercastLogo from "../images/logos/evercast.svg";
-import Howdy from "../images/logos/howdy.png";
-import JarockiMeLogo from "../images/logos/jarocki.svg";
-import JojoMobileLogo from "../images/logos/jojomobile.png";
-import MonitoLogo from "../images/logos/monito.svg";
-import MobileVikingsLogo from "../images/logos/mv.png";
-import NSNLogo from "../images/logos/nsn.svg";
-import ParabolLogo from "../images/logos/parabol.svg";
-import TastyCloudLogo from "../images/logos/tastycloud.png";
-import YearProgressLogo from "../images/logos/yearprogress.svg";
-import Minimal from "../images/logos/minimal.svg";
 import { GitHubIcon } from "../components/icons/GitHubIcon";
 import { LinkedInIcon } from "../components/icons/LinkedInIcon";
 import { XIcon } from "../components/icons/XIcon";
 
 export const RESUME_DATA = {
-  name: "Bartosz Jarocki",
-  initials: "BJ",
-  location: "Wrocław, Poland, CET",
-  locationLink: "https://www.google.com/maps/place/Wrocław",
+  name: "Sergio Jovani",
+  initials: "SJ",
+  location: "Barcelona, Spain",
+  locationLink: "https://www.google.com/maps/place/Barcelona,+Spain/",
   about:
-    "Full Stack Engineer focused on building products with extra attention to details",
+    "Chief Technology Officer, commited to building high-quality cost-efficient software solutions through inspirational leadership and team empowerment.",
   summary:
-    "As a Full Stack Engineer, I have successfully taken multiple products from 0 to 1. I lead teams effectively, ensuring an environment where people can do their best work. Currently, I work mostly with TypeScript, React, Node.js, and GraphQL. I have over 8 years of experience in working remotely with companies all around the world.",
-  avatarUrl: "https://avatars.githubusercontent.com/u/1017620?v=4",
-  personalWebsiteUrl: "https://jarocki.me",
+    "As a Chief Technology Officer with more than 15 years of experience in software engineering, my expertise lies in building high-quality software solutions by leading and empowering teams, creating a nurturing and collaborative atmosphere. Passionate about technology, I am constantly seeking new challenges and dedicated to ongoing learning in team-oriented environments.",
+  avatarUrl: "https://avatars.githubusercontent.com/u/841257?v=4",
+  personalWebsiteUrl: "https://sergiojovani.com",
   contact: {
-    email: "bartosz.jarocki@hey.com",
-    tel: "+48530213401",
+    email: "sergio.jovani@protonmail.com",
+    tel: null,
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/BartoszJarocki",
+        url: "https://github.com/SergioJovaniG",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/bjarocki/",
+        url: "https://www.linkedin.com/in/SergioJovani",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/BartoszJarocki",
+        url: "https://x.com/jovanigstech",
         icon: XIcon,
       },
     ],
   },
-  education: [
-    {
-      school: "Wrocław University of Technology",
-      degree: "Bachelor's Degree in Control systems engineering and Robotics",
-      start: "2007",
-      end: "2010",
-    },
-  ],
+  education: [],
   work: [
     {
-      company: "Parabol",
-      link: "https://parabol.co",
-      badges: ["Remote"],
-      title: "Senior Full Stack Developer",
-      logo: ParabolLogo,
-      start: "2021",
-      end: "2024",
-      description:
-        "Implemented new features, led squad, worked on improving the way developers ship the code, started migration from Emotion to Tailwind CSS and more. Technologies: React, TypeScript, GraphQL",
-    },
-    {
-      company: "Clevertech",
-      link: "https://clevertech.biz",
-      badges: ["Remote"],
-      title: "Lead Android Developer → Full Stack Developer",
-      logo: ClevertechLogo,
-      start: "2015",
-      end: "2021",
-      description:
-        "Created Android mobile apps and led teams for companies like Vision Media, DKMS, or AAA. Built live streaming application for Evercast from scratch. Technologies: Android, Kotlin, React, TypeScript, GraphQL",
-    },
-    {
-      company: "Jojo Mobile",
-      link: "https://bsgroup.eu/",
+      company: "Erika Lust",
+      link: "https://erikalust.com",
+      location: "Barcelona, Spain",
       badges: [],
-      title: "Android Developer → Lead Android Developer",
-      logo: JojoMobileLogo,
-      start: "2012",
-      end: "2015",
+      title: "Chief Technology Officer",
+      start: "June 2022",
+      end: "Present",
+      intro: "Erika Lust is a global sex-positive ethical adult entertainment lifestyle and tech company that produces original movies and provides worldwide top-notch streaming services.",
       description:
-        "Built an Android team, created Android apps for biggest Polish companies like LOT, Polskie Radio, Agora, PolskaPress",
+        "As the CTO, I lead a team of 8 engineers, focusing on nurturing their growth and integrating innovative technologies. My role involves strategic implementation of advanced cost-effective solutions to enhance system scalability, performance, and security, while aligning technology with business goals. I also promote best practices in software development, fostering a culture of excellence within the team.",
+        highlights: "Nuxt, Laravel, AWS, CloudFlare, Kubernetes, Testing (Cypress, Pest), CI/CD (GitHub Actions), MySQL, Varnish, Redis, GTM, BigQuery, DBT, AirByte, AI (SageMaker, Bedrock), IaC (Helm, Terraform), Observability (Prometheus, Grafana, Sentry), CRM (Ometria), Mobile Apps (Kotlin, Swift)"
     },
     {
-      company: "Nokia Siemens Networks",
-      link: "https://www.nokia.com",
+      company: "Cognizant",
+      link: "https://cognizant.com",
+      location: "Barcelona, Spain",
+      badges: ["Remote"],
+      title: "Technical Lead - Senior Manager",
+      start: "April 2021",
+      end: "June 2022",
+      note: "Client: Dufry (Switzerland)",
+      intro: "Dufry is a global retailer with stores in airports and other locations. Their ecommerce platform mainly provides a reserve and pick up service, mostly used by travelers, and a home delivery service available in some locations. It is based on Adobe Commerce and integrates a middleware based on Laravel.",
+      description:
+        "As the technical lead, I am drove the engineering teams (12 engineers) of the ecommerce platform to build high-quality software using the best practices. Working closely with stakeholders and collaborating in the functional and technical definition, I also ensured that the delivered solutions met the client's expectations and that guaranteed the modularity and scalability of the architecture.",
+      highlights: "Adobe Commerce (2.x), Laravel (Horizon), AWS, Akamai, Akeneo, Dynamics 365, MySQL, Varnish, Elasticsearch, DynamoDB, Lambda, Jenkins"
+    },
+    {
+      company: "ISDIN",
+      link: "https://isdin.com",
+      location: "Barcelona, Spain",
       badges: [],
-      title: "C/C++ Developer",
-      logo: NSNLogo,
-      start: "2010",
-      end: "2012",
-      description: "Creating and testing software for LTE base stations",
+      title: "Software Architect",
+      start: "August 2019",
+      end: "April 2021",
+      intro: "ISDIN is a pharmaceutical company that was experiencing a great and fast international expansion. Their application architecture was based on legacy non-scalable applications that were not aligned with the expected business growth.",
+      description:
+        "As the digital architect, I defined, planned and executed the new application architecture roadmap based on the migration of monolithic applications to microservices and headless solutions, supporting the engineering teams (+15 engineers) to adopt the best practices, and collaborating with stakeholders, UX and data teams.",
+      highlights: "Magento (1.x, 2.x), Salesforce Commerce Cloud, Symfony, Laravel, Drupal (7.x), WordPress, TypeScript, React, Express, Next.js, NestJS, ElasticSearch, MySQL, PostgreSQL, DynamoDB, Redis, Docker, AWS, Jenkins, Cypress, React Testing Library, Jest, Google Optimize"
+    },
+    {
+      company: "The Etailers",
+      link: "https://theetailers.com",
+      location: "Barcelona, Spain",
+      badges: [],
+      title: "Software Architect",
+      start: "June 2017",
+      end: "August 2019",
+      intro: "The Etailers is an ecommerce agency specialized in Magento that provides B2B and B2C solutions.",
+      description:
+        "As the software architect, I defined and promoted a new approach for Magento development best practices and helped the engineering team (5 engineers) in their adoption, providing technical leadership and also writing code.",
+      highlights: "Magento (1.x, 2.x), Salesforce Commerce Cloud, Symfony, Laravel, Drupal (7.x), WordPress, TypeScript, React, Express, Next.js, NestJS, ElasticSearch, MySQL, PostgreSQL, DynamoDB, Redis, Docker, AWS, Jenkins, Cypress, React Testing Library, Jest, Google Optimize"
+    },
+    {
+      company: "Mecalux",
+      link: "https://mecalux.com",
+      location: "Barcelona, Spain",
+      badges: [],
+      title: "Senior Software Engineer",
+      start: "March 2017",
+      end: "June 2017",
+      intro: "Mecalux is one of the leading warehouse storage companies worldwide. Their B2C ecommerce platform offers smart and innovative storage solutions.",
+      description:
+        "As the only software engineer expert in Magento in the company, I worked on the maintenance and implementation of new features in the ecommerce platform based on Magento 1.x, collaborating with other teams.",
+      highlights: "Magento 1.x, MySQL, Redis, Jenkins, Docker, SonarQube, Selenium, ElasticSearch"
+    },
+    {
+      company: "Freelance @ Comunic-art",
+      link: "https://comunic-art.com",
+      location: "Barcelona, Spain",
+      badges: [],
+      title: "Full-Stack Software Engineer",
+      start: "June 2009",
+      end: "February 2017",
+      intro: "Comunic-art was an agency that provided small-medium size web solutions.",
+      description:
+        "As the main technical partner and full-stack software engineer, I implemented and delivered several software solutions built with Magento and Drupal working closely with the clients and collaborating with some other freelances.",
+      highlights: "Magento (1.x, 2.x), Drupal (6.x, 7.x, 8.x), MySQL, Varnish, Redis, Jenkins, Docker"
+    },
+    {
+      company: "PYMAS Parquet",
+      location: "Valencia, Spain",
+      badges: [],
+      title: "IT Manager",
+      start: "February 2005",
+      end: "August 2008",
+      intro: "PYMAS Parquet was a company dedicated to selling parquet and other wood related products.",
+      description:
+        "As the IT Manager, I was responsible for the IT infrastructure, I worked on the implementation of a new corporate website and participated in the digitalization of logistics and commercial processes.",
+      highlights: "PHP, MySQL, CSS"
     },
   ],
   skills: [
+    "Software Architecture",
+    "Software Engineering",
+    "Technical Leadership",
+    "Team Management",
+    "Mentoring",
+    "Agile Methodologies",
+    "Cloud Computing",
     "JavaScript",
     "TypeScript",
-    "React/Next.js/Remix",
+    "React/Next.js",
+    "Vue/Nuxt.js",
+    "PHP",
+    "Magento",
+    "Laravel",
     "Node.js",
-    "GraphQL",
-    "Relay",
-    "WebRTC",
   ],
   projects: [
-    {
-      title: "Consultly",
-      techStack: [
-        "Side Project",
-        "TypeScript",
-        "Next.js",
-        "Vite",
-        "GraphQL",
-        "WebRTC",
-      ],
-      description: "A platform to build and grow your online business",
-      logo: ConsultlyLogo,
-      link: {
-        label: "consultly.com",
-        href: "https://consultly.com/",
-      },
-    },
-    {
-      title: "Monito",
-      techStack: ["Side Project", "TypeScript", "Next.js", "Browser Extension"],
-      description:
-        "Browser extension that records everything happening in a web application",
-      logo: MonitoLogo,
-      link: {
-        label: "monito.dev",
-        href: "https://monito.dev/",
-      },
-    },
-    {
-      title: "Jarocki.me",
-      techStack: ["Side Project", "Next.js", "MDX"],
-      description:
-        "My personal website and blog. Built with Next.js and Notion API",
-      logo: JarockiMeLogo,
-      link: {
-        label: "github.com",
-        href: "https://jarocki.me/",
-      },
-    },
-    {
-      title: "Minimal",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Minimalist calendars, habit trackers and planners generator",
-      logo: Minimal,
-      link: {
-        label: "useminimal.com",
-        href: "https://useminimal.com/",
-      },
-    },
-    {
-      title: "Barepapers",
-      techStack: ["Side Project", "Next.js", "Puppeteer"],
-      description:
-        "Generates beautiful wallpapers using random shapes and gradients",
-      logo: BarepapersLogo,
-      link: {
-        label: "barepapers.com",
-        href: "https://barepapers.com/",
-      },
-    },
-    {
-      title: "Year progress",
-      techStack: ["Side Project", "TypeScript", "Next.js"],
-      description: "Tracks current year progress and displays a countdown",
-      logo: YearProgressLogo,
-      link: {
-        label: "getyearprogress.com",
-        href: "https://getyearprogress.com/",
-      },
-    },
-    {
-      title: "Parabol",
-      techStack: [
-        "Full Stack Developer",
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "The Agile meeting co-pilot that delivers better meetings with less effort",
-      logo: ParabolLogo,
-      link: {
-        label: "github.com",
-        href: "https://parabol.co/",
-      },
-    },
-    {
-      title: "Evercast",
-      techStack: [
-        "Lead Frontend Developer",
-
-        "TypeScript",
-        "React",
-        "Node.js",
-        "GraphQL",
-      ],
-      description:
-        "Creative collaboration platform that combines video conferencing and HD media streaming",
-      logo: EvercastLogo,
-      link: {
-        label: "evercast.us",
-        href: "https://www.evercast.us/",
-      },
-    },
-    {
-      title: "Mobile Vikings",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for leading virtual mobile operator in Poland",
-      logo: MobileVikingsLogo,
-      link: {
-        label: "mobilevikings.pl",
-        href: "https://mobilevikings.pl/",
-      },
-    },
-    {
-      title: "Howdy",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Howdy is a place for you to join communities you care about",
-      logo: Howdy,
-      link: {
-        label: "play.google.com",
-        href: "https://howdy.co/",
-      },
-    },
-    {
-      title: "Tastycloud",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application for managing and displaying restaurant menus in kiosk mode",
-      logo: TastyCloudLogo,
-      link: {
-        label: "tastycloud.fr",
-        href: "https://www.tastycloud.fr/",
-      },
-    },
-    {
-      title: "Ambit",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with sharing your contact details",
-      logo: AmbitLogo,
-    },
-    {
-      title: "Bim",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Android application that helps with booking a table in a restaurants",
-      logo: BimLogo,
-    },
-    {
-      title: "Canal Digital GO",
-      techStack: ["Lead Android Developer", "Android", "Kotlin"],
-      description:
-        "Video streaming mobile application for Canal Digital subscribers",
-      logo: CDGOLogo,
-    },
   ],
 } as const;
