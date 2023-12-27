@@ -34,7 +34,6 @@ export const RESUME_DATA = {
       },
     ],
   },
-  education: [],
   work: [
     {
       company: "Erika Lust",
@@ -144,7 +143,5 @@ export const RESUME_DATA = {
     "Magento",
     "Laravel",
     "Node.js",
-  ],
-  projects: [
-  ],
+  ]
 } as const;
