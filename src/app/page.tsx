@@ -1,13 +1,13 @@
-import { Avatar, AvatarFallback, AvatarImage } from "../components/ui/avatar";
-import { Card, CardHeader, CardContent } from "../components/ui/card";
-import { Badge } from "../components/ui/badge";
-import { CommandMenu } from "../components/command-menu";
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { CommandMenu } from "@/components/command-menu";
 import { Metadata } from "next";
-import { Section } from "../components/ui/section";
+import { Section } from "@/components/ui/section";
 import { GlobeIcon, MailIcon, PhoneIcon } from "lucide-react";
-import { Button } from "../components/ui/button";
-import { RESUME_DATA } from "../data/resume-data";
-import { ProjectCard } from "../components/project-card";
+import { Button } from "@/components/ui/button";
+import { RESUME_DATA } from "@/data/resume-data";
+import { ProjectCard } from "@/components/project-card";
 
 export const metadata: Metadata = {
   title: `${RESUME_DATA.name} | ${RESUME_DATA.about}`,
@@ -106,9 +106,15 @@ export default function Page() {
                 <CardHeader>
                   <div className="flex items-center justify-between gap-x-2 text-base">
                     <h3 className="inline-flex items-center justify-center gap-x-1 font-semibold leading-none">
-                      <a className="hover:underline" href={work.link}>
-                        {work.company}
-                      </a>
+                      {'link' in work ? (
+                        <a className="hover:underline" href={work.link}>
+                          {work.company}
+                        </a>
+                      ): (
+                        <a>
+                          {work.company}
+                        </a>
+                      )}
 
                       <span className="inline-flex gap-x-1">
                         {work.badges.map((badge) => (
@@ -131,7 +137,7 @@ export default function Page() {
                     {work.title}
                   </h4>
                 </CardHeader>
-                {work.note ? (
+                {'note' in work ? (
                   <CardContent className="mt-2 text-xs underline">
                     {work.note}
                   </CardContent>
@@ -149,51 +155,10 @@ export default function Page() {
           })}
         </Section>
         <Section>
-          {RESUME_DATA.education.length > 0 ? (
-            <h2 className="text-xl font-bold">Education</h2>
-          ) : null}
-          {RESUME_DATA.education.map((education) => {
-            return (
-              <Card key={education.school}>
-                <CardHeader>
-                  <div className="flex items-center justify-between gap-x-2 text-base">
-                    <h3 className="font-semibold leading-none">
-                      {education.school}
-                    </h3>
-                    <div className="text-sm tabular-nums text-gray-500">
-                      {education.start} - {education.end}
-                    </div>
-                  </div>
-                </CardHeader>
-                <CardContent className="mt-2">{education.degree}</CardContent>
-              </Card>
-            );
-          })}
-        </Section>
-        <Section>
           <h2 className="text-xl font-bold">Skills</h2>
           <div className="flex flex-wrap gap-1">
             {RESUME_DATA.skills.map((skill) => {
               return <Badge key={skill}>{skill}</Badge>;
-            })}
-          </div>
-        </Section>
-
-        <Section className="print-force-new-page scroll-mb-16">
-          {RESUME_DATA.projects.length > 0 ? (
-            <h2 className="text-xl font-bold">Projects</h2>
-          ) : null}
-          <div className="-mx-3 grid grid-cols-1 gap-3 print:grid-cols-3 print:gap-2 md:grid-cols-2 lg:grid-cols-3">
-            {RESUME_DATA.projects.map((project) => {
-              return (
-                <ProjectCard
-                  key={project.title}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.techStack}
-                  link={"link" in project ? project.link.href : undefined}
-                />
-              );
             })}
           </div>
         </Section>
@@ -205,9 +170,9 @@ export default function Page() {
             url: RESUME_DATA.personalWebsiteUrl,
             title: "Personal Website",
           },
-          ...RESUME_DATA.contact.social.map((socilaMediaLink) => ({
-            url: socilaMediaLink.url,
-            title: socilaMediaLink.name,
+          ...RESUME_DATA.contact.social.map((socialMediaLink) => ({
+            url: socialMediaLink.url,
+            title: socialMediaLink.name,
           })),
         ]}
       />

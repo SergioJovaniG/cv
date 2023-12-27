@@ -1,6 +1,6 @@
-import { GitHubIcon } from "../components/icons/GitHubIcon";
-import { LinkedInIcon } from "../components/icons/LinkedInIcon";
-import { XIcon } from "../components/icons/XIcon";
+import { GitHubIcon } from "@/components/icons/GitHubIcon";
+import { LinkedInIcon } from "@/components/icons/LinkedInIcon";
+import { XIcon } from "@/components/icons/XIcon";
 
 export const RESUME_DATA = {
   name: "Sergio Jovani",
@@ -34,7 +34,6 @@ export const RESUME_DATA = {
       },
     ],
   },
-  education: [],
   work: [
     {
       company: "Erika Lust",
@@ -144,7 +143,5 @@ export const RESUME_DATA = {
     "Magento",
     "Laravel",
     "Node.js",
-  ],
-  projects: [
-  ],
+  ]
 } as const;
