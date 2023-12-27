@@ -149,6 +149,12 @@ export default function Page() {
                 <CardContent className="mt-2 text-xs">
                   {work.description}
                 </CardContent>
+
+                {work.highlights ? (
+                  <CardContent className="mt-2 text-xs pl-5">
+                    ★ {work.highlights}
+                  </CardContent>
+                ) : null}
               </Card>
             );
           })}
