@@ -29,7 +29,7 @@ export const RESUME_DATA = {
       },
       {
         name: "X",
-        url: "https://x.com/Sergio_JovaniG",
+        url: "https://x.com/SergioJovaniG",
         icon: XIcon,
       },
     ],
