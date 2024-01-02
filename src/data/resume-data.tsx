@@ -14,7 +14,7 @@ export const RESUME_DATA = {
   avatarUrl: "https://avatars.githubusercontent.com/u/841257?v=4",
   personalWebsiteUrl: "https://sergiojovani.com",
   contact: {
-    email: "sergio.jovani@protonmail.com",
+    email: "hi@sergiojovani.com",
     tel: null,
     social: [
       {
