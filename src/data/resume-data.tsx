@@ -19,17 +19,17 @@ export const RESUME_DATA = {
     social: [
       {
         name: "GitHub",
-        url: "https://github.com/SergioJovaniG",
+        url: "https://github.com/sjovanig",
         icon: GitHubIcon,
       },
       {
         name: "LinkedIn",
-        url: "https://www.linkedin.com/in/SergioJovani",
+        url: "https://www.linkedin.com/in/sergiojovani",
         icon: LinkedInIcon,
       },
       {
         name: "X",
-        url: "https://x.com/SergioJovaniG",
+        url: "https://x.com/sjovanig",
         icon: XIcon,
       },
     ],
